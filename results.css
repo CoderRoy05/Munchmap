@@ -1,0 +1,191 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  input[type="text"] {
+    background-color: #fff;
+    border: 2px solid #550c656c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+    font-size: 16px;
+    padding: 12px;
+    width: 300px;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  ::placeholder{
+    color: rgb(63, 3, 63);
+  }
+  
+  button[type="submit"] {
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: background-color 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(78, 2, 78);
+  }
+
+  /* SEARCH BOX STYLE (2)
+
+  .search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color:#d9d900;
+    cursor: pointer;
+  }
+
+  .search-box button{
+    position: absolute;
+    top: 0;
+    right: -4.4;
+    transform: scale(0.9);
+    background-color: #d9d900;
+  } */
+  
+  /* RESULTS STYLES  */
+
+  #results {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 40px 0;
+  }
+  
+  #results > div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #results img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  #results h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #results ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #results li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  #results a {
+    background-color: #007bff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  #results a:hover {
+    background-color: #0069d9;
+  }
+
+  /* RESULTS MESSAGE STYLE */
+
+  .crave{
+    text-decoration: solid;
+    text-align: center;
+  }
+
+  /* QUICK MEDIA RESPONSIVENESS - mostly for the input text */
+
+  @media screen and (max-width: 322px) {
+    input[type="text"] {
+      width: 200px;
+    }
+    ::placeholder{
+      font-size: 12px;
+    }
+  }
+
+  /* DIFFERENT NEW STYLE USED formerly for the search bar(good style css), just kept it */
+/* body{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.455);
+    margin-left: 320px;
+}
+
+.box:hover input{
+    width: 300px;
+}
+
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+button{
+    background-color: purple;
+    padding: 11px;
+    margin-right: -20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fa-search{
+    color: aliceblue;
+} */

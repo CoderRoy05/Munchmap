@@ -961,10 +961,15 @@ textarea.w-select {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .w-hidden-main,
   .w-hidden-medium {
     display: inherit !important;
+  }
+
+  .moto{
+    width: 70px;
+    height: 58px;
   }
 
   .w-hidden-small {
@@ -1037,6 +1042,11 @@ textarea.w-select {
     max-width: none;
   }
 
+  .moto{
+    height: 58px;
+    width: 65px;
+  }
+
   .w-hidden-main,
   .w-hidden-medium,
   .w-hidden-small {
@@ -1097,6 +1107,13 @@ textarea.w-select {
 
   .w-col-tiny-12 {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .moto{
+    height: 50px;
+    width: 58px;
   }
 }
 
