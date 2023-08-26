@@ -11,7 +11,11 @@ async function searchRecipe() {
     const searchValue = searchInput.value.trim();
     const response = await fetch(`https://api.edamam.com/search?q=${searchValue}&app_id=7aa516a5&app_key=dc836a223fb788b11ae390504d9e97ce&from=0&to=10`);
     const data = await response.json();
-    displayRecipes(data.hits);
+    if (data.hits.length === 0) {
+        resultsList.innerHTML = '<p class="both">No results found.</p>';
+    } else {
+        displayRecipes(data.hits);
+    }
 }
 
 function displayRecipes(recipes) {

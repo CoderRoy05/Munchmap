@@ -135,6 +135,10 @@ body {
     text-decoration: solid;
     text-align: center;
   }
+  /* --no results found code */
+  .both{
+    text-align: center;
+  }
 
   /* QUICK MEDIA RESPONSIVENESS - mostly for the input text */
 
